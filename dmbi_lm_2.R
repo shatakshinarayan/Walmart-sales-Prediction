@@ -10,11 +10,6 @@ library(timeDate)
 library(readr)
 library(randomForest)
 
-#weight certain features more by duplication, not sure if helpful?
-#train$tDays = 360*(train$year-2010) + (train$month-1)*30 + train$day
-#train$days30 = (train$month-1)*30 + train$day
-
-
 train <- read.csv("C:/Users/Wishi/Downloads/Data Mining and Business Intelligence/Project/trainV6.csv")
 sub <- read.csv("C:/Users/Wishi/Downloads/Data Mining and Business Intelligence/Project/sampleSubmission.csv/sampleSubmission.csv")
 test <- read.csv("C:/Users/Wishi/Downloads/Data Mining and Business Intelligence/Project/test.csv/test_v1.csv")
