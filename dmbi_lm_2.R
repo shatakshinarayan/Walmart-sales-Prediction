@@ -24,7 +24,7 @@ test$dHoliday = test$IsHoliday*test$Days
 #linear regression
 nrow_subm = nrow(sub)
 i=1
-rsq = data.frame()
+rsq = data.frame() #to store value of r2
 while (i < nrow_subm) {
   print(i/nrow_subm)#Track progress
   #select data for the store and department
@@ -79,7 +79,7 @@ write.table(x=rsq,
 #weights variation
 nrow_subm = nrow(sub)
 i=1
-rsq1 = data.frame()
+rsq1 = data.frame() #to store value of R2
 while (i < nrow_subm) {
   print(i/nrow_subm)#Track progress
   #select data for the store and department
